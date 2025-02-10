@@ -1,0 +1,103 @@
+/* dashboard.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  background-image: url('images/login.avif'); /* Background Image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-container {
+  background-color: rgba(1, 2, 15, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.animated-heading {
+  font-size: 36px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.animated-subheading {
+  font-size: 18px;
+  margin: 10px 0;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.info-section {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.login-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #2517e6;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #230ae3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .dashboard-container {
+    width: 95%;
+  }
+
+  .animated-heading {
+    font-size: 28px;
+  }
+
+  .animated-subheading {
+    font-size: 16px;
+  }
+
+  .info-section {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,277 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('images/signup1.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: #4e07e7;
+  }
+  
+  .buy-now-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Section */
+  .buy-now-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .animated-heading {
+    font-size: 36px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .subheading {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Order Summary Section */
+  .order-summary {
+    background: rgba(227, 223, 231, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 5, 0.895);
+  }
+  
+  .order-summary h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #e30cdc;
+  }
+  
+  .order-summary table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+  }
+  
+  .order-summary table td,
+  .order-summary table th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .order-summary table th {
+    font-size: 18px;
+    color: #4db8ff;
+  }
+  
+  .order-summary table td {
+    font-size: 16px;
+  }
+  
+  .order-summary .total {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  
+  .payment-options {
+    margin-bottom: 50px;
+  }
+  
+  .payment-options h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4db8ff;
+  }
+  
+  .payment-methods img {
+    width: 50px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .payment-methods img:hover {
+    transform: scale(1.1);
+  }
+  
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Shipping and Address Section */
+  .shipping-section,
+  .billing-section {
+    margin-bottom: 30px;
+    background: rgba(228, 225, 225, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .shipping-section h2,
+  .billing-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4db8ff;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #dbd9e1;
+    color: #0a0505;
+  }
+  
+  .input-field:focus {
+    border-color: #4db8ff;
+    outline: none;
+  }
+  
+  /* Coupon Section */
+  .coupon-section {
+    margin-bottom: 30px;
+    background: rgba(241, 233, 233, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .coupon-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4db8ff;
+  }
+  
+  .coupon-field {
+    width: 70%;
+    padding: 12px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #dbd6df;
+    color: #fff;
+  }
+  
+  .coupon-button {
+    padding: 12px 20px;
+    background-color: #4db8ff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .coupon-button:hover {
+    background-color: #006bb3;
+  }
+  
+  /* Secure Checkout Section */
+  .secure-checkout {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .secure-checkout img {
+    width: 50px;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    padding: 20px 40px;
+    background-color: #4db8ff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #006bb3;
+  }
+  
+  /* Error Handling */
+  .error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Footer Section */
+  .footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    color: #ccc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .order-summary,
+    .shipping-section,
+    .billing-section,
+    .coupon-section {
+      padding: 20px;
+    }
+  
+    .payment-methods img {
+      width: 40px;
+      margin-right: 10px;
+    }
+  
+    .cta-button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .buy-now-header {
+      margin-bottom: 30px;
+    }
+  
+    .subheading {
+      font-size: 16px;
+    }
+  
+    .input-field,
+    .coupon-field {
+      font-size: 14px;
+    }
+  
+    .cta-button {
+      font-size: 18px;
+      padding: 15px 30px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

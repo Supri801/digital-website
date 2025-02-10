@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/background5.avif') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeInBackground 3s ease-in-out;
+  }
+  
+  .forgot-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .forgot-password-box {
+    background: rgba(71, 9, 241, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    transform: translateY(20px);
+    animation: slideUp 1s ease-out;
+  }
+  
+  .forgot-password-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-out;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 10px rgba(92, 184, 92, 0.5);
+  }
+  
+  .recover-btn {
+    background: #e13e11;
+    color: #e0dee9;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .recover-btn:hover {
+    background: #1912de;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInBackground {
+    from { background-position: -100% 0; }
+    to { background-position: 0 0; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+  
